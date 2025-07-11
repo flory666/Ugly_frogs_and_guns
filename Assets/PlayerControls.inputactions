@@ -1,0 +1,415 @@
+{
+    "name": "PlayerControls",
+    "maps": [
+        {
+            "name": "Movement",
+            "id": "cf78b431-7cce-4fa3-ab42-47df189bfed2",
+            "actions": [
+                {
+                    "name": "Move",
+                    "type": "PassThrough",
+                    "id": "206e325b-5795-4f3f-abd6-975c4cd2fdfd",
+                    "expectedControlType": "Vector2",
+                    "processors": "StickDeadzone(min=0.1,max=1.401298E-45)",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "aim_direction",
+                    "type": "Value",
+                    "id": "7e1eac1d-137e-48f1-b02f-1dcb4ba2c2f7",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "shoot",
+                    "type": "Button",
+                    "id": "0b8e2c80-e19e-4830-be8d-17ea963c3c96",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "52a6baf4-ce0b-4f2b-bedc-4d8a90b88afe",
+                    "path": "<Gamepad>/leftStick",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "2D Vector",
+                    "id": "d9b110e9-6872-4294-9dfb-d0ca6ea951c0",
+                    "path": "2DVector",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Move",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "up",
+                    "id": "4f538938-1d31-456a-bfe9-bb3511f69830",
+                    "path": "<Keyboard>/w",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "down",
+                    "id": "c5acc87e-79e2-46a8-8962-9a99804271bc",
+                    "path": "<Keyboard>/s",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "left",
+                    "id": "cc43c28d-ca04-4eec-8916-e753433dcb33",
+                    "path": "<Keyboard>/a",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "right",
+                    "id": "b9c23799-500e-4a49-9997-0986bb6443fc",
+                    "path": "<Keyboard>/d",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "cb33824d-0c36-4f67-b18c-9b68068d96c0",
+                    "path": "<Gamepad>/rightStick",
+                    "interactions": "",
+                    "processors": "AxisDeadzone(min=0.01,max=10)",
+                    "groups": "",
+                    "action": "aim_direction",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "c6f9d6bb-6a94-4b4f-9923-7e97bfa2d1db",
+                    "path": "<Gamepad>/rightShoulder",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "shoot",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "9934c0a1-c300-458d-81c0-79cb77e7362d",
+                    "path": "<Keyboard>/space",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "shoot",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
+            "name": "Movement1",
+            "id": "f971bf60-e7bb-4804-a7b0-050c49323989",
+            "actions": [
+                {
+                    "name": "Move",
+                    "type": "PassThrough",
+                    "id": "c3503e0f-6a35-469c-8469-fcfd1aeac472",
+                    "expectedControlType": "Vector2",
+                    "processors": "StickDeadzone(min=0.1,max=1.401298E-45)",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "aim_direction",
+                    "type": "Value",
+                    "id": "004d86c5-d547-4236-b205-fb381a02f4a9",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "shoot",
+                    "type": "Button",
+                    "id": "00010426-9a76-4f69-b8e1-d066374fe60c",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "fee939fd-4d69-439d-b36e-6d1d11d12946",
+                    "path": "<Gamepad>/leftStick",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "f69b4a8d-001a-4afe-84da-f1df97762f05",
+                    "path": "<Gamepad>/rightStick",
+                    "interactions": "",
+                    "processors": "AxisDeadzone(min=0.01,max=10)",
+                    "groups": "",
+                    "action": "aim_direction",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "3ee50611-9edf-4279-b91f-d5d4559a0fa4",
+                    "path": "<Gamepad>/rightShoulder",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "shoot",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
+            "name": "Movement2",
+            "id": "fc4e971f-1a4d-4831-9fd9-ffce2144f1b2",
+            "actions": [
+                {
+                    "name": "Move",
+                    "type": "PassThrough",
+                    "id": "c611ceca-efde-4ff4-b7f8-c462dce9c3f4",
+                    "expectedControlType": "Vector2",
+                    "processors": "StickDeadzone(min=0.1,max=1.401298E-45)",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "aim_direction",
+                    "type": "Value",
+                    "id": "7afa3a0a-24cc-4f7a-8f72-4b5c974735ef",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "shoot",
+                    "type": "Button",
+                    "id": "db4e5903-affc-402f-afda-a1995e500055",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "75ef89bb-30c7-4379-a828-0e41d60c0648",
+                    "path": "<Gamepad>/leftStick",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "1f46114e-337a-406a-93ae-0e8c4a138e3b",
+                    "path": "<Gamepad>/rightStick",
+                    "interactions": "",
+                    "processors": "AxisDeadzone(min=0.01,max=10)",
+                    "groups": "",
+                    "action": "aim_direction",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "11feb71b-e692-4c61-a6ad-16b6a940eb50",
+                    "path": "<Gamepad>/rightShoulder",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "shoot",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
+            "name": "Movement3",
+            "id": "f2bcbdd4-9e54-415f-a1a0-4a1fb3f08f1e",
+            "actions": [
+                {
+                    "name": "Move",
+                    "type": "PassThrough",
+                    "id": "a15ab9f4-b10e-4b8a-9133-b0d20365e04e",
+                    "expectedControlType": "Vector2",
+                    "processors": "StickDeadzone(min=0.1,max=1.401298E-45)",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "aim_direction",
+                    "type": "Value",
+                    "id": "f804a96b-fcbc-4b04-889f-906b73c067df",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "shoot",
+                    "type": "Button",
+                    "id": "7f5d03e5-02aa-440c-9d1e-f4c46c2ce4f2",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "589c13cb-81d9-4d0c-b582-dbfd77ba71e1",
+                    "path": "<Gamepad>/leftStick",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "ae342cb1-064b-4b5d-a5d6-4a083d1cc7b3",
+                    "path": "<Gamepad>/rightStick",
+                    "interactions": "",
+                    "processors": "AxisDeadzone(min=0.01,max=10)",
+                    "groups": "",
+                    "action": "aim_direction",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "613489e0-7722-4057-8d66-d369fa20da24",
+                    "path": "<Gamepad>/rightShoulder",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "shoot",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
+            "name": "instance",
+            "id": "48a75c15-764f-4e8b-9e4a-f34eecdb08b5",
+            "actions": [
+                {
+                    "name": "addPlayer",
+                    "type": "Button",
+                    "id": "ccc2e94b-7d20-426f-b9b6-c893781bda05",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "removePlayer",
+                    "type": "Button",
+                    "id": "2e020043-84e1-49cc-8d91-b8cb4e52220c",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "a65a2c25-39f5-4760-9da2-4c29f75c6df8",
+                    "path": "<Gamepad>/buttonNorth",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "addPlayer",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "66f8a28a-651c-4b2a-84ca-2bf679931875",
+                    "path": "<Keyboard>/space",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "addPlayer",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "d73bbee0-0ee0-4434-aea4-d62bf80628b9",
+                    "path": "<Gamepad>/select",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "removePlayer",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": [
+        {
+            "name": "gamepad",
+            "bindingGroup": "gamepad",
+            "devices": [
+                {
+                    "devicePath": "<Gamepad>",
+                    "isOptional": false,
+                    "isOR": false
+                }
+            ]
+        }
+    ]
+}

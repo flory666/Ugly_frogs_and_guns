@@ -912,8 +912,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -278, y: 154}
-  m_SizeDelta: {x: 575.699, y: 431.96}
+  m_AnchoredPosition: {x: -209.69159, y: 164.78557}
+  m_SizeDelta: {x: 712.3157, y: 410.3889}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1442466115
 MonoBehaviour:
@@ -935,8 +935,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'gay niggers and shit
-
+  m_text: 'Ugly frogs and guns
 
 '
   m_isRightToLeft: 0
@@ -1001,7 +1000,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: -9.392472, z: -612.6738, w: -88.009056}
+  m_margin: {x: 0, y: -9.392472, z: -627.0545, w: -88.009056}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
